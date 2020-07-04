@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Memory #1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://dl.dropbox.com/s/e0o0yhtti61bdja/stylesheet.css">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function randomBackgroundColor() {
+      var x = Math.floor(Math.random() * 256);
+      var y = Math.floor(Math.random() * 256);
+      var z = Math.floor(Math.random() * 256);
+      var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+
+      document.getElementById("background").style.backgroundColor = bgColor;
+    });
+  </script>
+
+</head>
+
+<body>
+<main id="background">
+
+  <svg width="100%" height="100%">
+
+    <defs>
+      <pattern id="zigzag" x="0" y="0" width="110" height="100" patternUnits="userSpaceOnUse">
+        <polyline points="
+          20 -5
+          50 50
+          20 105
+        "></polyline>
+      </pattern>
+    </defs>
+
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#zigzag)" style="stroke-width: 0;"></rect>
+
+  </svg>
+
+  <article>
+
+    <div class="article-body">
+
+    <header>
+      <h1>A door to a pub</h1>
+    </header>
+
+    <div class="article-text">
+      <p>I came through the door to the KPH in the one mode in which I can operate when the eminently correct path occurs to me&mdash;that is, having spent as close to no time at all on thinking as possible.</p>
+      <p>I lived in a basement below Chesterton Road; you lived behind a window above Ladbroke Grove.</p>
+      <p>I asked if we could live in the same place.</p>
+    </div>
+
+    <div class="illustration">
+      <iframe id="GoogMaps" src="https://www.google.com/maps/embed?pb=!4v1593814697155!6m8!1m7!1sbaftLfsP4Qn66j1BQNgzdw!2m2!1d51.51683927871395!2d-0.209808560865739!3f322.4775655373079!4f-0.7350948588002666!5f1.9587109090973311" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+
+    </div>
+
+  </article>
+
+</main>
+</body>
